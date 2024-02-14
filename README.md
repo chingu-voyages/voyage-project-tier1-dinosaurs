@@ -1,4 +1,4 @@
-# voyage-project-tier1-recipe
+# voyage-project-tier1-dinosaurs
 
 ## Table of Contents
 
@@ -10,25 +10,43 @@
 
 ## Overview
 
-Ingredients and recipes are fundamental components of the culinary world, 
-working together to create a wide array of dishes and flavors. 
+Hey there! How about we create an app all about dinosaurs? We've got our data all 
+set from the National History Museum that tells us about different dinosaurs.
 
-Ingredients are the raw materials used in cooking and food preparation while 
-Recipes are sets of instructions that outline how to prepare a specific dish.
+Imagine our app like a dino world! We can show all kinds of dinosaurs – big ones 
+looking for food, calm ones eating plants, and even tiny ones running around. From 
+huge dinosaurs that made the ground shake to little ones in the forests.
 
-They detail the ingredients, their quantities, and a step-by-step process to 
-create the desired culinary outcome.
+And get this, our tool might even let us time-travel! Imagine going back in time to 
+see how these dinosaurs lived. Plus, it tells us what type of dinosaur it is and 
+where it used to call home. So, you'll get to know dinosaurs from all over the place.
 
-![Ingredients And Recipe](./assets/ingredients-and-recipe.jpg)
+We're thinking of adding a cool twist – using News data to show you the latest 
+discoveries about dinosaurs. Pretty cool, huh?
 
-Your Chingu Voyage team will be using this data to create an app that will help 
-anyone interested in creating dishes and flavours to explore this recipe in novel ways. 
-Your app will summarize this data and will allow users to select subsets of it for 
-detailed step-by-step process.
+Let's make an app that's not just smart but also super fun for everyone!
+
+- Dinosaur example website
+
+![Dinosaurs Example Website](./assets/dino-site-inspiration.png)
+
+- Dinosaurs example map
+
+![Dinosaurs Example Map](./assets/dino-map-site.png)
+
+- Dinosaurs example charts
+
+![Dinosaurs Example Chart](./assets/dino-charts-zig.png)
+
+![Dinosaurs Example BarChart](./assets/dino-chart-bar.png)
+
+Your Chingu Voyage team will be using this data to create an web app that will help 
+anyone interested to be able to “dig” into the fossil data and discover facts 
+about dinosaurs in a unique way. Your app will summarize this data and will allow
+users to apply a single filter to multiple visualizations simultaneously.
 
 This will provide you with an opportunity to build Web Development experience
-dealing with large volumes of recipe data, nutritional information with a subset of
-categories, and user queries.
+dealing with large volumes of dinosaurs & news data, charts, maps, and user queries.
 
 ## General Instructions
 
@@ -58,11 +76,13 @@ implement to enhance this app, if time permits.
 
 - [ ] This is a purely frontend application. No backend is required. 
 - [ ] You may use any languages, tools, or libraries you prefer when designing and building this app. 
-- [ ] We've included a JSON file containing the raw data in the `/assets` directory in this repo. But, if you choose, you may use the [Recipe - Rapid API](https://rapidapi.com/apidojo/api/tasty ) instead.
+- [ ] We've included a JSON file containing the raw data in the `/assets` directory in this repo. But, 
+if you choose, you may use the [Dinosaurs API](chingu.io) instead.
 - [ ] You may **_NOT_** use AI-base solution generators like GitHub CoPilot.
 - [ ] Useful links and resources:
-    - [Example Recipe App](https://namka-food-api.netlify.app)
-    - [Recipe - Rapid API](https://rapidapi.com/apidojo/api/tasty )
+    - [National History Museum](https://www.nhm.ac.uk/discover/dinosaurs.html)
+    - [Dinosaurs API](chingu.io)
+    - [Kaggle News Datasets](https://www.kaggle.com/datasets)
 
 #### Styling
 
@@ -73,43 +93,62 @@ implement to enhance this app, if time permits.
 
 #### Functionality
 
--   User can see a landing page containing at least the following components:
-    - [ ] Header component displaying a brief how-to-use.
-    - [ ] Search field that enables users to input ingredient.
-    - [ ] A scrollable list of recipes displaying the results based on the search criteria. Keep in mind that the [Recipe API](https://rapidapi.com/apidojo/api/tasty) has over 1500 Recipes, however, it's paginated with 20 recipes per page of result.
-    - [ ] A summary main recipe component: it should display recipe image, name and link to details.
-    - [ ] A summary detail recipe component: it should display recipe name, category, and instructions
+-   Overview:
+    - [ ] A single page application (SPA) or it's equivalent design to provide users with an immersive experience in exploring dinosaurs through a user-friendly interface.
+
+- Dinosaur Display
+    - [ ] Display dinosaurs' names and corresponding images sourced from the provided JSON file.
+    - [ ] Each dinosaur entry should be clickable to view full details.
 
 - Search Component
-    - [ ] User can input an ingredient.
-    - [ ] Initiate the search by either pressing the Enter key or clicking the 'Search' button/icon.
+    - [ ] Implement a search feature allowing users to search for dinosaurs by name.
+    - [ ] Search results should dynamically filter displayed dinosaurs based on the entered name.
 
-- Main Data Display Component
-    - [ ] Display result for each recipe in the main component.
-    - [ ] Remain on the header component if no search ingredient has been entered.
+- Diet Chart Visualization
+    - [ ] Display a chart (pie chart or doughnut chart) illustrating the distribution of general dinosaur diets (e.g., herbivore, carnivore, omnivore) based on provided JSON data.
+    - [ ] Ensure the chart is visually appealing and informative, providing a clear overview of diet composition.
 
-- Summary Detail Component
-    - [ ] Display the following information of the selected recipe:
-        - Name
-        - Category
-        - Instructions
+- Dinosaur Details View
+    - [ ] Enable users to view full details of a selected dinosaur upon clicking its entry.
+    - [ ] Details should include additional information sourced from the JSON file such as: 
+        - name
+        - imageSrc
+        - typeOfDinosaur
+        - length
+        - diet
+        - whenLived
+        - typeSpecies
+        - description
+
+- Responsiveness
+    - [ ] Ensure the web application is responsive and accessible across various devices and screen sizes.
+    - [ ] Utilize responsive design techniques to adapt to different viewport sizes.
     
 ### Extras (Not Required)
 
--   Search Component
-    - [ ] Enable the preservation of search criteria between sessions, allowing users to select them from a dropdown menu when needed.
-    - [ ] Display an error message when an unlisted item is entered.
--   Detail Data Display Component
-    - [ ] Add a link to the instruction video
--   Summary Metrics Component
-    - [ ] In addition to the information for the selected data, also display the nutritional data
--   General
-    - [ ] Support dark/light mode
-    - [ ] Allow the user options for customizing the font and font size
+- Dinosaur Location Map
+    - [ ] Provide an optional feature to display the location of a selected dinosaur on a map.
+    - [ ] Upon clicking a dinosaur entry, dynamically fetch and display its geographic location on an interactive map using a mapping API (e.g., Google Maps).
+
+## Acceptance Criteria
+- Search Functionality
+    - [ ] Users should be able to search for dinosaurs by name.
+    - [ ] Search results must dynamically filter displayed dinosaurs based on the entered name.
+    - [ ] Search functionality should be case-insensitive and allow partial matching of dinosaur names.
+
+- Diet Chart Visualization
+    - [ ] The app must display a chart (pie chart or doughnut chart) illustrating the distribution of general dinosaur diets (e.g., herbivore, carnivore, omnivore) based on provided data.
+    - [ ] The chart must accurately represent the proportion of each diet type within the dataset.
+    - [ ] Users should be able to easily interpret and interact with the chart to understand diet composition.
+
+- Dinosaur Details View
+    - [ ] Upon clicking a dinosaur entry, users must be able to view full details of the selected dinosaur.
+    - [ ] Dinosaur details should include notable characteristics sourced from the JSON file.
+    - [ ] The details view should be accessible and provide comprehensive information about the selected dinosaur.
 
 ## Acknowledgements
 
-Data is been pulled from [Tasty of Rapid API](https://rapidapi.com/apidojo/api/tasty). 
+We acknowledge the [National History Museum](https://www.nhm.ac.uk) for providing access to the dataset containing valuable information about dinosaurs. We extend our appreciation to [Kaggle](https://www.kaggle.com) for hosting and curating the dataset used in this project. Kaggle's platform provided a wealth of resources and tools that facilitated the exploration and analysis of the dinosaur data, enriching our development process.
 
 ## About Chingu
 
