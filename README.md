@@ -77,11 +77,11 @@ implement to enhance this app, if time permits.
 - [ ] This is a purely frontend application. No backend is required. 
 - [ ] You may use any languages, tools, or libraries you prefer when designing and building this app. 
 - [ ] We've included a JSON file containing the raw data in the `/assets` directory in this repo. But, 
-if you choose, you may use the [Dinosaurs API](chingu.io) instead.
+if you choose, you may use the [Dinosaurs API](https://chinguapi.onrender.com/dinosaurs) instead.
 - [ ] You may **_NOT_** use AI-base solution generators like GitHub CoPilot.
 - [ ] Useful links and resources:
     - [National History Museum](https://www.nhm.ac.uk/discover/dinosaurs.html)
-    - [Dinosaurs API](chingu.io)
+    - [Dinosaurs API](https://chinguapi.onrender.com/dinosaurs)
     - [Kaggle News Datasets](https://www.kaggle.com/datasets)
 
 #### Styling
