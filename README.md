@@ -82,7 +82,7 @@ if you choose, you may use the [Dinosaurs API](https://chinguapi.onrender.com/di
 - [ ] Useful links and resources:
     - [National History Museum](https://www.nhm.ac.uk/discover/dinosaurs.html)
     - [Dinosaurs API](https://chinguapi.onrender.com/dinosaurs)
-    - [Kaggle News Datasets](https://www.kaggle.com/datasets)
+    - [NewsAPI](https://newsapi.org)
 
 #### Styling
 
@@ -148,7 +148,7 @@ if you choose, you may use the [Dinosaurs API](https://chinguapi.onrender.com/di
 
 ## Acknowledgements
 
-We acknowledge the [National History Museum](https://www.nhm.ac.uk) for providing access to the dataset containing valuable information about dinosaurs. We extend our appreciation to [Kaggle](https://www.kaggle.com) for hosting and curating the dataset used in this project. Kaggle's platform provided a wealth of resources and tools that facilitated the exploration and analysis of the dinosaur data, enriching our development process.
+We acknowledge the [National History Museum](https://www.nhm.ac.uk) for providing access to the dataset containing valuable information about dinosaurs. Additionally, we thank [NewsAPI](https://newsapi.org) for delivering the latest news on dinosaur discoveries, contributing to our ongoing exploration of this fascinating field.
 
 ## About Chingu
 
