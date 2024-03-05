@@ -89,7 +89,7 @@ if you choose, you may use the [Dinosaurs API](https://chinguapi.onrender.com/di
 - [ ] Surprise us!!! Use your teams creativity to make this app distinctive.
 - [ ] Add a footer containing a link to your teams GitHub repo
 - [ ] In general, you will find these [UI design principles](https://www.justinmind.com/ui-design/principles) helpful.
-- [ ] Recommend using this resource for [clean CSS](https://www.devbridge.com/articles/implementing-clean-css-bem-method/)
+- [ ] Recommend using this resource for [clean CSS](https://altcampus.com/posts/writing-clean-and-organized-css)
 
 #### Functionality
 
